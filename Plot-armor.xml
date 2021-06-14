@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Plot Armor</name>
+		<description></description>
+		<author url="Anime in DnD">Blaine Simple</author>
+		<update version="0.0.1">
+			<file name="Plot-armor.xml" url="" />
+		</update>
+	</info>
+
+
+	<element name="Plot Armor" type="Magic Item" source="Anime in DnD" id="ID_HOMEBREW_DMG_MAGIC_ITEM_ARMOR_1">
+		<description>
+			<p>A set of clothes which belonged to a young hero with an unexplainable ability to never die. These clothes have absorbed some of this incredible power, gaining a similar ability.</p>
+            <p class="indent"><strong><em>Survival</em></strong> If you take an instance of damage that would reduce you to 0 hitpoints while wearing this item, and the amount of damage is less than your maximum hitpoints, you take no damage instead. Once this ability is used, it can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">{{parent}} +{{enhancement}}</set>
+		</setters>
+	</element>
+</elements>
